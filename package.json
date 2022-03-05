@@ -1,0 +1,38 @@
+{
+	"name": "@flairverse/package-template",
+	"author": "flairverse",
+	"version": "0.0.0",
+	"description": "Package Template for FlairVerse Packages",
+	"homepage": "https://github.com/flairverse/package-template.git#readme",
+	"license": "MIT",
+	"private": false,
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bugs": {
+		"url": "https://github.com/flairverse/package-template.git/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/flairverse/package-template.git"
+	},
+	"files": [
+		"dist",
+		"example"
+	],
+	"keywords": [
+		"package",
+		"template",
+		"flairverse"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepare": "npm run build",
+		"test:run": "jest --silent=true",
+		"test:watch": "jest --watch --silent=false",
+		"browserslist": "npx browserslist"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"jest": "^27.5.1"
+	}
+}
