@@ -1,32 +1,34 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"allowJs": true,
-		"sourceMap": true,
-		"declaration": true,
-		"removeComments": true,
-		"emitDecoratorMetadata": true,
-		"skipLibCheck": true,
-		"experimentalDecorators": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": true,
-		"noEmit": true,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"downlevelIteration": true,
-		"jsx": "preserve",
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["source/*"]
-		},
-		"incremental": true
-	},
-	"include": ["source"],
-	"exclude": ["node_modules", "dist"]
+  "compilerOptions": {
+    "jsx": "preserve",
+    "declaration": true,
+    "strictNullChecks": true,
+    "target": "es2017",
+    "outDir": "dist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "lib": ["es2015", "dom", "es2017"],
+    "rootDir": "source",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "strict": true,
+    "paths": {
+      "@/*": ["source/*"]
+    },
+    "allowJs": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "incremental": true
+  },
+  "include": ["source"],
+  "exclude": ["node_modules", "dist"]
 }
